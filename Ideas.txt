@@ -1,0 +1,5 @@
+Choose chosen one|proposed|Mihai|2
+Help poor people|proposed|Stefan|1
+Give money to all|accepted|Andrada|3
+Clean your room|proposed|Dani|1
+Kill character|proposed|Alina|1

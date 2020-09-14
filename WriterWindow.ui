@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WriterWindow</class>
+ <widget class="QWidget" name="WriterWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>511</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WriterWindow</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="ideasLabel">
+     <property name="text">
+      <string>Ideas</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="ideasList">
+     <property name="maximumSize">
+      <size>
+       <width>400</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="descriptionLabel">
+       <property name="text">
+        <string>Description:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="descriptionLineEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="actLabel">
+       <property name="text">
+        <string>Act:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="actLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="addIdeaButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Add Idea</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="savePlotButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Save Plot</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addIdeaButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WriterWindow</receiver>
+   <slot>addIdeaCommand()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>431</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>savePlotButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WriterWindow</receiver>
+   <slot>savePlotCommand()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>331</x>
+     <y>432</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addIdeaCommand()</slot>
+  <slot>savePlotCommand()</slot>
+ </slots>
+</ui>

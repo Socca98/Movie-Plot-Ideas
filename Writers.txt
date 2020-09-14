@@ -1,0 +1,6 @@
+Mihai|Assistant
+Stefan|Junior
+Dani|Senior
+Andrada|Junior
+Vladimir Putin|Senior
+Alina|Junior
